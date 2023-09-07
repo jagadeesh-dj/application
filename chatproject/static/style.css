@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    background-color: cadetblue;
+    height: 100vh;
+    display: flex;
+}
+#users{
+    background-color: rgb(193, 162, 225);
+    width: 30%;
+    padding: 0.5rem 0.5rem;
+    overflow-y: scroll;
+}
+#users ul li{
+    list-style: none;
+    padding: 1.5rem ;
+    border-radius: 7px;
+    background-color: transparent;
+    margin-bottom: 4px;
+    color: white;
+    font-size: large ;
+    font-weight:bold ;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+#users::-webkit-scrollbar{
+    display: none;
+}
+#users{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#chatroom{
+    width: 70%;
+    height: auto;
+    margin: 0.5rem 0.5rem;
+}
+.message{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: auto;
+    height: 80vh;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+#textbox{
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+input[type='text']{
+    padding: 0.8rem 10rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+}
+button{
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+.message::-webkit-scrollbar{
+    display: none;
+}
+.message{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+#receiver-profile{
+    text-align: center;
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+#sender td p{
+    background-color: rgb(238, 234, 243);
+    padding: 1rem;
+    border-radius: 15px 15px 0px 15px;
+    margin-bottom: 2px;
+    
+}
+#receiver td p{
+    background-color: rgb(238, 234, 243);
+    padding: 1rem;
+    border-radius: 0px 15px 15px 15px;
+    margin-bottom: 2px;
+}
